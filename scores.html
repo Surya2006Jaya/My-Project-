@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scores - Cricket Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Cricket Management</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="matches.html">Matches</a></li>
+                <li><a href="scores.html" class="active">Scores</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <section id="scores">
+            <h2>Match Scores</h2>
+            <form id="score-form">
+                <select id="match-select" required>
+                    <option value="">Select Match</option>
+                </select>
+                <input type="number" id="team1-score" placeholder="Team 1 Score" required>
+                <input type="number" id="team2-score" placeholder="Team 2 Score" required>
+                <button type="submit">Update Score</button>
+            </form>
+            <ul id="score-list"></ul>
+        </section>
+        <footer>
+            <p>&copy; 2023 Cricket Management System</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

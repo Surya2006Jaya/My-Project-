@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches - Cricket Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Cricket Management</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="matches.html" class="active">Matches</a></li>
+                <li><a href="scores.html">Scores</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <section id="matches">
+            <h2>Manage Matches</h2>
+            <form id="match-form">
+                <select id="team1" required>
+                    <option value="">Select Team 1</option>
+                </select>
+                <span>vs</span>
+                <select id="team2" required>
+                    <option value="">Select Team 2</option>
+                </select>
+                <input type="date" id="match-date" required>
+                <button type="submit">Schedule Match</button>
+            </form>
+            <ul id="match-list"></ul>
+        </section>
+        <footer>
+            <p>&copy; 2023 Cricket Management System</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
